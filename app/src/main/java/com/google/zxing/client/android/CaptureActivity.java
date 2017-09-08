@@ -224,7 +224,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
 
         if (handler != null) {
-            handler.sendEmptyMessageDelayed(R.id.restart_preview, 2000L);
+            handler.sendEmptyMessageDelayed(R.id.restart_preview, 1000L);
         }
     }
 
