@@ -91,10 +91,10 @@ public final class ViewfinderView extends View {
     int width = canvas.getWidth();
     int height = canvas.getHeight();
 
-    MyLogUtil.i("====================================================================");
-    MyLogUtil.i("frame.width():" + frame.width() + ",frame.height():" + frame.height() + "---(" + frame.left + ", " + frame.top + ", " + frame.right + ", " + frame.bottom + ")");
-    MyLogUtil.i("previewFrame.width():" + previewFrame.width() + ",previewFrame.height():" + previewFrame.height() + "---(" + previewFrame.left + ", " + previewFrame.top + ", " + previewFrame.right + ", " + previewFrame.bottom + ")");
-    MyLogUtil.i("canvas.getWidth():" + width + ",canvas.getHeight():" + height);
+      MyLogUtil.i("====================================================================");
+      MyLogUtil.i("frame.width():" + frame.width() + ",frame.height():" + frame.height() + "---(" + frame.left + ", " + frame.top + ", " + frame.right + ", " + frame.bottom + ")");
+      MyLogUtil.i("previewFrame.width():" + previewFrame.width() + ",previewFrame.height():" + previewFrame.height() + "---(" + previewFrame.left + ", " + previewFrame.top + ", " + previewFrame.right + ", " + previewFrame.bottom + ")");
+      MyLogUtil.i("canvas.getWidth():" + width + ",canvas.getHeight():" + height);
 
     // Draw the exterior (i.e. outside the framing rect) darkened
     paint.setColor(resultBitmap != null ? resultColor : maskColor);

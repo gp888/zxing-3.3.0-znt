@@ -221,7 +221,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
             msg = "无法识别";
         }
         MyLogUtil.i(msg);
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
 
         if (handler != null) {
             handler.sendEmptyMessageDelayed(R.id.restart_preview, 5000L);
