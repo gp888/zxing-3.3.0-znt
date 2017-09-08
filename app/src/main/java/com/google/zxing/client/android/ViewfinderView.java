@@ -40,7 +40,7 @@ import java.util.List;
 public final class ViewfinderView extends View {
 
   private static final int[] SCANNER_ALPHA = {0, 64, 128, 192, 255, 192, 128, 64};
-  private static final long ANIMATION_DELAY = 30L;
+  private static final long ANIMATION_DELAY = 40L;
   private static final int CURRENT_POINT_OPACITY = 0xA0;
   private static final int MAX_RESULT_POINTS = 20;
   private static final int POINT_SIZE = 6;
@@ -91,10 +91,10 @@ public final class ViewfinderView extends View {
     int width = canvas.getWidth();
     int height = canvas.getHeight();
 
-      MyLogUtil.i("====================================================================");
-      MyLogUtil.i("frame.width():" + frame.width() + ",frame.height():" + frame.height() + "---(" + frame.left + ", " + frame.top + ", " + frame.right + ", " + frame.bottom + ")");
-      MyLogUtil.i("previewFrame.width():" + previewFrame.width() + ",previewFrame.height():" + previewFrame.height() + "---(" + previewFrame.left + ", " + previewFrame.top + ", " + previewFrame.right + ", " + previewFrame.bottom + ")");
-      MyLogUtil.i("canvas.getWidth():" + width + ",canvas.getHeight():" + height);
+    MyLogUtil.i("====================================================================");
+    MyLogUtil.i("frame.width():" + frame.width() + ",frame.height():" + frame.height() + "---(" + frame.left + ", " + frame.top + ", " + frame.right + ", " + frame.bottom + ")");
+    MyLogUtil.i("previewFrame.width():" + previewFrame.width() + ",previewFrame.height():" + previewFrame.height() + "---(" + previewFrame.left + ", " + previewFrame.top + ", " + previewFrame.right + ", " + previewFrame.bottom + ")");
+    MyLogUtil.i("canvas.getWidth():" + width + ",canvas.getHeight():" + height);
 
     // Draw the exterior (i.e. outside the framing rect) darkened
     paint.setColor(resultBitmap != null ? resultColor : maskColor);
